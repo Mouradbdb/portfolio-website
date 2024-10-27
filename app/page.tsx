@@ -48,7 +48,7 @@ export default function Page() {
           <div className="grid grid-cols-7 gap-4">
             {technologies.map((tech) => (
               <div key={tech.name} className="flex flex-col items-center justify-center p-2 transition-transform hover:scale-110">
-                <Image src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" />
+                <Image src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" width={12} height={12}/>
                 <span className="mt-2 text-xs text-center">{tech.name}</span>
               </div>
             ))}
