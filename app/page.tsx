@@ -8,9 +8,16 @@ const technologies = [
   { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
   { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
   { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
   { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
   { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  {name:"Flutter",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"},
+  {name:"Dart",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"},
+  {name:"Firebase",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"},
+  {name:"Python",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"},
+  {name:"Prisma",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"},
+  {name:"Express",icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg"},
 ];
 
 export default function Page() {
@@ -51,7 +58,7 @@ export default function Page() {
             {technologies.map((tech) => (
               <div key={tech.name} className="flex flex-col items-center justify-center p-2 transition-transform hover:scale-110">
                 <Image src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" width={12} height={12} />
-                <span className="mt-2 text-xs text-center">{tech.name}</span>
+                <span className="mt-2 text-xs text-center font-bold">{tech.name}</span>
               </div>
             ))}
           </div>
