@@ -1,4 +1,5 @@
 import { Mail, Github, Instagram } from 'lucide-react'
+import Image from 'next/image'
 
 const technologies = [
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -47,7 +48,7 @@ export default function Page() {
           <div className="grid grid-cols-7 gap-4">
             {technologies.map((tech) => (
               <div key={tech.name} className="flex flex-col items-center justify-center p-2 transition-transform hover:scale-110">
-                <img src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" />
+                <Image src={tech.icon} alt={tech.name} className="w-12 h-12 object-contain" />
                 <span className="mt-2 text-xs text-center">{tech.name}</span>
               </div>
             ))}
